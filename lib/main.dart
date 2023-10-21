@@ -66,16 +66,16 @@ class home extends StatelessWidget {
               indicatorWeight: 5,
               labelColor: Colors.white,
               tabs: [
-                Tab(icon: Icon(Icons.done_outline_sharp), text: "Completed"),
+                Tab(icon: Icon(Icons.done_outline_sharp), text: "Pending"),
                 Tab(
                   icon: Icon(Icons.pending_actions_sharp),
-                  text: "Pending",
+                  text: "Completed",
                 )
               ]),
         ),
         body: const TabBarView(children: [
-          completed(),
           pending(),
+          completed(),
         ]),
         floatingActionButton: FloatingActionButton(
           onPressed: () {

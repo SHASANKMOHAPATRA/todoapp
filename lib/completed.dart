@@ -92,6 +92,8 @@ class _completedState extends State<completed> {
                                           fontWeight: FontWeight.w300,
                                           fontSize: 15,
                                         ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
                                       ),
                                     ),
                                     SizedBox(
